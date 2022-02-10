@@ -1,0 +1,178 @@
+.form_authentications {
+  min-height: 100vh;
+  align-items: center;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  justify-content: center;
+}
+.form_authentications .sign_in-up_form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.sign_in-up_form .container{
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border:1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  flex-direction: column;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+}
+.sign_in-up_form .container .form_link {
+  width: 100%;
+}
+.sign_in-up_form .container .form_link .change_link {
+  width: 100%;
+  margin: 5px 20px;
+}
+.sign_in-up_form .container .form_link .change_link .icon-link {
+  color: #65dfc9;
+  margin-right: 10px;
+}
+.sign_in-up_form .container .form_link .change_link .text-link{
+  color: #65dfc9;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.sign_in-up_form .container .form_link .change_link:hover .text-link,
+.sign_in-up_form .container .form_link .change_link:hover .icon-link{
+  transform: scale(150%);
+  
+}
+.sign_in-up_form .squares {
+  position: absolute;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border:1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+}
+.sign_in-up_form .squares:nth-child(1) {
+  top: -50px;
+  right: -60px;
+  width: 100px;
+  height: 100px;
+}
+.sign_in-up_form .squares:nth-child(2) {
+  top: 150px;
+  left: -100px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+.sign_in-up_form .squares:nth-child(3) {
+  bottom: 50px;
+  right: -60px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+.sign_in-up_form .squares:nth-child(4) {
+  bottom: -80px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+}
+.sign_in-up_form .squares:nth-child(5) {
+  top: -80px;
+  left: 140px;
+  width: 60px;
+  height: 60px;
+}
+.sign_in-up_form .container .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+}
+.sign_in-up_form .container .title::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 30%;
+  right: auto;
+  background: #fff;
+  width: 30px;
+  height: 2px;
+}
+.sign_in-up_form .container form {
+  width: 100%;
+  padding: 0 20px;
+}
+.sign_in-up_form .container .actions {
+  justify-content: center;
+}
+.sign_in-up_form .container .inputBox {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.sign_in-up_form .container .inputBox i {
+  position: absolute;
+  padding-left: 15px;
+}
+.sign_in-up_form .container .inputBox .input {
+  padding: 10px 20px 10px 40px;
+}
+.sign_in-up_form .container .inputBox .input,
+.sign_in-up_form .container .inputBox .btn_submit {
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  border:1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  outline: none;
+  border-radius: 35px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.sign_in-up_form .container .inputBox .input::placeholder {
+  color: #777777;
+  margin-left: 20px;
+}
+.sign_in-up_form .container .inputCheckbox{
+  margin: 20px 0 0 10px;
+}
+.sign_in-up_form .container .inputCheckbox label{
+  margin-left: 5px;
+}
+.sign_in-up_form .container .inputBox .btn_submit {
+  background: #fff;
+  color: #666;
+  // max-width: 100px;
+  width: auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+.sign_in-up_form .container .inputBox .btn_submit:hover {
+  background: var(--yellow1);
+  color: #fff;
+}

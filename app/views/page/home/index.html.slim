@@ -1,0 +1,324 @@
+#home
+  .intro-landing
+    .main-content.landing
+      section.home-hero
+        .hero-bg
+          .hero-pattern-bg
+            =image_tag("demo-page/hero-pattern-bg.png", class:"hero-pattern-img__default")
+            =image_tag("demo-page/hero-pattern-bg-lg.png", class:"hero-pattern-img__large")
+        .hero-character
+          .hero-guy-1
+            =image_tag("demo-page/hero-guy-1.png", class:"hero-guy-1__default")
+            =image_tag("demo-page/hero-guy-1-lg.png", class:"hero-guy-1__large")
+          .hero-guy-2
+            =image_tag("demo-page/hero-guy-2.png")
+          .hero-guy-3
+            =image_tag("demo-page/hero-guy-3.png")
+          .hero-girl
+            =image_tag("demo-page/hero-girl.png")
+        .hero-overlay
+        .hero-section
+          .hero-container
+            .hero-text
+              h1
+                | welcome to
+                span  it learning hub
+              p luôn luôn lắng nghe, lâu lâu mới hiểu
+              / .hero-button-float
+              /   .hero-button-wrapper
+              /     button.btn.btn-white.btn-talk data-target="#contactModal" data-toggle="modal" 
+              /       span Let's talk!
+  section.work-slide
+    .container
+      .work-slide-heading
+        h1 
+          span.color-yellow IT LEARNING HUB 
+          span.fs-2 là nơi :
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            .card
+              .card-img-top
+                =image_tag('demo-page/1111.jpeg', class:"card-img")
+              .card-body
+                p.card-text
+                  |Sinh viên được học tập, trao đổi những kiến thức thực tế và mới nhất về công nghệ thông tin
+          .swiper-slide
+            .card
+              .card-img-top
+                =image_tag('demo-page/5.jpeg', class:"card-img")
+              .card-body
+                p.card-text
+                  |Sinh viên được được đào tạo, hướng dẫn bởi những người có chuyên môn cao trong ngành
+          .swiper-slide
+            .card
+              .card-img-top
+                =image_tag('demo-page/1.jpeg', class:"card-img")
+              .card-body
+                p.card-text
+                  |Sinh viên được làm quen với các kiến thức, kỹ năng làm việc theo yêu cầu thực tế của doanh nghiệp
+          .swiper-slide
+            .card
+              .card-img-top
+                =image_tag('demo-page/3.jpeg', class:"card-img")
+              .card-body
+                p.card-text
+                  |Sinh viên được được va chạm thực tế bởi các dự án do 
+                  span.color-yellow Tech Town 
+                  |đưa ra
+          .swiper-slide
+            .card
+              .card-img-top
+                =image_tag('demo-page/1122.jpeg', class:"card-img")
+              .card-body
+                p.card-text
+                  |Tất cả sinh viên có nhu cầu học hỏi được tham gia các buổi đào tạo, chia sẻ từ chuyên gia
+          .swiper-slide
+            .card
+              .card-img-top
+                =image_tag('demo-page/6.jpeg', class:"card-img")
+              .card-body
+                p.card-text
+                  |Sinh viên năm 3 & năm 4 được tham gia các dự án thực tế
+  section.main-activities
+    .container
+      h1.heading 
+        | CÁC HOẠT ĐỘNG CHÍNH TẠI 
+        span.color-yellow IT LEARNING HUB
+      .main-activities-content
+        .activities-card 
+          .card-img 
+            =image_tag("demo-page/workshop.png", class:"activities-img")
+            h3 
+              | ĐÀO TẠO
+
+          .card-content  
+            p 
+              | Sinh viên tham gia Learning Hub sẽ được tham dự các buổi đào tạo kiến thức,
+              br kinh nghiệm làm việc thực tế từ các chuyên gia hàng đầu trong ngành công nghệ thông tin,
+              br hiện đang là Technical Leader, CTO tại các công ty lớn.
+        .activities-card   
+          .card-img  
+            =image_tag("demo-page/meeting.png", class:"activities-img")
+            h3
+              | CHIA SẺ & CỐ VẤN 
+          .card-content  
+            p 
+              | Learning Hub sẽ là sân chơi, cầu nối cho các bạn sinh viên yêu thích công nghệ kết nối, chia sẻ kiến thức với nhau, không chỉ trong phạm vi nhà trường mà còn trong cộng đồng các trường đai học khác hay cộng đồng nhân sự làm việc trong lĩnh vực công nghệ thông tin.
+              br Bên cạnh đó các bạn cũng sẽ nhận được sự cố vấn từ những người đi trước về kiến thức hay những vấn đề xoay quanh ngành học của mình.
+        .activities-card  
+          .card-img  
+            =image_tag("demo-page/coder.png", class:"activities-img")
+            h3 
+              | DỰ ÁN THỰC TẾ 
+          .card-content  
+            p 
+              | Các sinh viên được lựa chọn tham gia các dự án thực tế sẽ được:
+              br - Cọ xát với môi trường làm việc thực tế tại doanh nghiệp sau khi ra trường.
+              br - Ứng dung kiến thức được học vào thực tế.
+              br - Được nhận lương tương ứng với năng lực và dự án tham gia.
+  section.review
+    .container
+      h1.heading.color-yellow
+        | Đội ngũ hướng dẫn giàu kinh nghiệm 
+      .list-card 
+        .profile-card
+          .imgBx
+            =image_tag('demo-page/dl1.jpeg', class: "img-profile")
+          .content
+            .text-contact   
+              h3
+                | Dương Trần
+              span 
+                | Senior Dev
+            .icon-contact 
+              i.fa.fa-facebook style="--i:1;"
+              i.fa.fa-telegram style="--i:2;"
+              i.fa.fa-twitter style="--i:3;"
+              i.fa.fa-instagram style="--i:4;"
+        .profile-card
+          .imgBx
+            =image_tag('demo-page/haha.jpeg', class: "img-profile")
+          .content
+            .text-contact   
+              h3
+                | Dương Trần
+              span
+                | Senior Dev
+            .icon-contact 
+              i.fa.fa-facebook style="--i:1;"
+              i.fa.fa-telegram style="--i:2;"
+              i.fa.fa-twitter style="--i:3;"
+              i.fa.fa-instagram style="--i:4;"
+        .profile-card
+          .imgBx
+            =image_tag('demo-page/vic.jpeg', class: "img-profile")
+          .content
+            .text-contact   
+              h3
+                | Dương Trần
+              span
+                | Senior Dev
+            .icon-contact 
+              i.fa.fa-facebook style="--i:1;"
+              i.fa.fa-telegram style="--i:2;"
+              i.fa.fa-twitter style="--i:3;"
+              i.fa.fa-instagram style="--i:4;"
+  section.upcoming-events-block
+    .container
+      .block-header
+        .pull-left
+          h1.block-header-heading
+            | Thời gian sự kiện
+      ul.list-unstyled.upcoming-events-list
+        li
+          .alignright
+            =image_tag("demo-page/8.jpeg")
+          .alignleft
+            time.time.text-uppercase datetime="2022-02-07" 
+              strong.date.fw-normal 07
+              strong.month.fw-light.font-lato February
+              strong.day.fw-light.font-lato MONDAY
+          .description-wrap
+            h3.list-heading
+              | Sinh viên đăng ký và thực hiện bài kiểm tra đầu vào
+            address
+              time datetime="2022-02-07"  8:00 am - 5:00 pm
+            = link_to "#",class: "btn-default text-uppercase" do 
+              | register
+        li
+          .alignright
+            =image_tag("demo-page/6.jpeg")
+          .alignleft
+            time.time.text-uppercase datetime="2022-02-28" 
+              strong.date.fw-normal 28
+              strong.month.fw-light.font-lato February
+              strong.day.fw-light.font-lato MONDAY
+          .description-wrap
+            h3.list-heading
+              | Bắt đầu training
+            address
+              time datetime="2022-02-28"  12:00 pm - 5:00 pm
+            = link_to "#",class: "btn-default text-uppercase" do 
+              | register
+        li     
+          .alignright
+            =image_tag("demo-page/bg7.jpeg")
+          .alignleft
+            time.time.text-uppercase datetime="2022-06-01" 
+              strong.date.fw-normal 01
+              strong.month.fw-light.font-lato June
+              strong.day.fw-light.font-lato WEDNESDAY
+          .description-wrap
+            h3.list-heading
+              | Thực hiện dự án
+            address
+              time datetime="2022-06-01"  4:00 pm - 8:00 pm
+            = link_to "#",class: "btn-default text-uppercase" do 
+              | register       
+        li     
+          .alignright
+            =image_tag("demo-page/mentor.jpeg")
+          .alignleft
+            time.time.text-uppercase datetime="2022-07-01" 
+              strong.date.fw-normal 01
+              strong.month.fw-light.font-lato July
+              strong.day.fw-light.font-lato FRIDAY
+          .description-wrap
+            h3.list-heading
+              | Tham gia chương trình Mentoring
+            address
+              time datetime="2022-07-01"  4:00 pm - 8:00 pm
+            = link_to "#",class: "btn-default text-uppercase" do 
+              | register     
+  / section.registration-test
+  /   .test 
+  /     h1.heading
+  /       |  ĐĂNG KÝ THỰC HIỆN BÀI TEST
+  /       br
+  /       | wait.......
+  section.contacts
+    .container
+      .contacts-logo 
+        =image_tag('demo-page/techtown_logo.png', class: "img-logo")
+      .contacts-content
+        .contacts-info
+          .info-icon
+            i.fa.fa-2x.fa-globe 
+          .info-text
+            h3 
+              | Headquarters 
+            .info-address
+              i.fa.fa-map-marker 
+              p 
+                |L17-11, Floor 17, Vincom Center Building, No 72 Le Thanh Ton, Ben Nghe Ward, District 1, HCMC, Viet Nam
+            .info-tel 
+              i.fa.fa-phone
+              p 
+                | +84 81-716-0331
+            .info-mail  
+              i.fa.fa-envelope-o
+              p 
+                |info@techtown.asia
+        .contacts-info
+          .info-icon
+            i.fa.fa-2x.fa-globe 
+          .info-text
+            h3 
+              | japan Representative
+            .info-address
+              i.fa.fa-map-marker
+              p 
+                |7F, Honmachi Minami Garden City 3-6-1 Kitakyuhojimachi, Chuo-Ku, Osaka, 541-0057, Japan
+            .info-user
+              i.fa.fa-user
+              p 
+                |Mr. Kataoka Ryota
+            .info-mail  
+              i.fa.fa-envelope-o
+              p 
+                |info@techtown.asia
+        .contacts-info
+          .info-icon
+            i.fa.fa-2x.fa-globe 
+          .info-text
+            h3 
+              | US Representative
+            .info-address
+              i.fa.fa-map-marker
+              p 
+                |10802 Capital Ave, Garden Grove, CA 92843, United States
+            .info-user    
+              i.fa.fa-user
+              p 
+                | Mr.Koo Den   
+            .info-tel 
+              i.fa.fa-phone
+              p 
+                | +1 714-468-5397 or +1 657 233 0907
+            .info-mail  
+              i.fa.fa-envelope-o
+              p 
+                |info@techtown.asia
+        .contacts-info
+          .info-icon
+            i.fa.fa-2x.fa-globe 
+          .info-text
+            h3 
+              | Canada Representative
+            .info-address
+              i.fa.fa-map-marker
+              p 
+                | 100 City Centre Dr. Unit 206 - Level 1, Mississauga, ON, L5B 2C9, Canada
+            .info-user
+              i.fa.fa-user
+              p 
+                | Mr. Thao Dang
+            .info-tel 
+              i.fa.fa-phone
+              p 
+                | (647)949 3333
+            .info-mail  
+              i.fa.fa-envelope-o
+              p 
+                |info@techtown.asia

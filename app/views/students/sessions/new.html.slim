@@ -1,0 +1,23 @@
+.form_authentications
+  .sign_in-up_form
+    .squares style="--i:0;"
+    .squares style="--i:1;"
+    .squares style="--i:2;"
+    .squares style="--i:3;"
+    .squares style="--i:4;"
+    .container
+      h2.title Log in
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field.inputBox
+          i.fa.fa-envelope-o
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: 'input', placeholder: "Your Email"
+        .field.inputBox
+          i.fa.fa-lock
+          = f.password_field :password, autocomplete: "current-password", class: 'input', placeholder: "Your Password"
+        - if devise_mapping.rememberable?
+          .field.inputCheckbox
+            = f.check_box :remember_me
+            = f.label :remember_me
+        .actions.inputBox
+          = f.submit "Log in", class: 'btn_submit'
+      = render "students/shared/links"

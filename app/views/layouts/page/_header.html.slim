@@ -1,0 +1,45 @@
+header
+  .container
+    .header-logo 
+      =image_tag('demo-page/techtown_logo.png', class: "img-logo")
+    nav.navbar
+      = link_to "#about",class: "link_menu" do 
+        | About
+      = link_to "##home",class: "link_menu" do 
+        | home
+      = link_to "#features",class: "link_menu" do 
+        | home
+      = link_to "#usage",class: "link_menu" do 
+        | home
+      = link_to "#review",class: "link_menu" do 
+        | home
+      = link_to "#contact",class: "link_menu" do 
+        | contact
+    .menu-icon
+      i#menu-bars.fa.fa-bars
+    .header_profile 
+      .profile-details
+        - if current_student.present?
+          p 
+            | Hi , 
+            span.color-yellow Student
+          .profile-menu         
+            i.fa.fa-caret-down.profile_icon aria-hidden="true"
+              .sub_menu
+                = link_to edit_student_registration_path,class: "link_sub_menu" do 
+                    i.fa.fa-pencil-square-o
+                    p 
+                      | Edit Profile
+                = link_to "#",class: "link_sub_menu" do
+                    i.fa.fa-cogs 
+                    p 
+                      | Settings
+                =link_to destroy_student_session_path(),class: "link_sub_menu", method: "delete" do 
+                    i.fa.fa-sign-out
+                    p 
+                      | Sign Out          
+        - else
+          =link_to new_student_registration_path(),class: "m-r-10 btn-sign-up-in" do 
+              |Sign Up
+          =link_to  new_student_session_path(),class: "btn-sign-up-in" do 
+              |Sign In 

@@ -1,0 +1,17 @@
+.form_authentications
+  .sign_in-up_form
+    .squares style="--i:0;"
+    .squares style="--i:1;"
+    .squares style="--i:2;"
+    .squares style="--i:3;"
+    .squares style="--i:4;"
+    .container
+      h2.title Forgot your password?
+      = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+        = render "students/shared/error_messages", resource: resource
+        .field.inputBox
+          i.fa.fa-envelope-o
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: 'input', placeholder: "Your Email"
+        .actions.inputBox
+          = f.submit "Send", class: 'btn_submit'
+      = render "students/shared/links"

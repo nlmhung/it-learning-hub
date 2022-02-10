@@ -1,0 +1,23 @@
+.form_authentications
+  .sign_in-up_form
+    .squares style="--i:0;"
+    .squares style="--i:1;"
+    .squares style="--i:2;"
+    .squares style="--i:3;"
+    .squares style="--i:4;"
+    .container
+      h2.title  Sign up
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        = render "students/shared/error_messages", resource: resource
+        .field.inputBox
+          i.fa.fa-envelope-o
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: 'input', placeholder: "Your Email"
+        .field.inputBox
+          i.fa.fa-lock
+          = f.password_field :password, autocomplete: "new-password", class: 'input', placeholder: "Password - 6 characters minimum"
+        .field.inputBox
+          i.fa.fa-lock
+          = f.password_field :password_confirmation, autocomplete: "new-password", class: 'input', placeholder: "Password Confirmation"
+        .actions.inputBox
+          = f.submit "Sign up", class: 'input btn_submit'
+      = render "students/shared/links"

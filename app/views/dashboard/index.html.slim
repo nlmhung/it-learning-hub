@@ -1,0 +1,37 @@
+.navigation
+  .navigation-menu
+    .navigation-link
+      i.fa.fa-home
+      =link_to "#" ,class:"link-menu" do 
+        | Dashboard
+    .navigation-link
+      i.fa.fa-user-secret
+      =link_to "#" ,class:"link-menu" do 
+        | Manager
+    .navigation-link
+      i.fa.fa-user
+      =link_to "#" ,class:"link-menu" do 
+        | User
+    .navigation-link
+      i.fa.fa-home
+      =link_to "#" ,class:"link-menu" do 
+        | Dashboard
+    .navigation-link
+      i.fa.fa-home
+      =link_to "#" ,class:"link-menu" do 
+        | Dashboard
+    .navigation-link
+      i.fa.fa-cogs
+      =link_to "#" ,class:"link-menu" do 
+        | Setting
+.main-contents
+  .topbar
+    .toggle 
+      i.icon-toggle.fa.fa-bars
+    .search
+      label
+        input.input-search aria-label="Search" placeholder="Search" type="search"
+        i.fa.fa-search
+    .profile-admin 
+      / =image_tag ('demo-page/dl1.jpeg'), class:"admin-avt"
+      i.fa.fa-caret-down

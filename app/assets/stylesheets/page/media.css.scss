@@ -1,0 +1,24 @@
+.main-content .home-hero .hero-bg .hero-pattern-bg .hero-pattern-img__default {
+  display: block;
+} 
+.main-content .home-hero .hero-bg .hero-pattern-bg .hero-pattern-img__large {
+  display: none;
+}
+
+@media only screen and (min-width: 1999px) {
+  // body {
+  //   background-color: blue;
+  // }
+  section.home-hero {
+    height: 1040px;
+  }
+  .main-content .home-hero .hero-bg .hero-pattern-bg {
+    width: 2874px;
+  }
+  .main-content .home-hero .hero-bg .hero-pattern-bg .hero-pattern-img__default {
+    display: none;
+  } 
+  .main-content .home-hero .hero-bg .hero-pattern-bg .hero-pattern-img__large {
+    display: block;
+  }
+}

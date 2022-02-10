@@ -1,0 +1,60 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border:none;
+  // transition: all .2s linear;
+}
+.main-contents {
+  position: absolute;
+  width: calc(100% - 250px);
+  left: 250px;
+  min-height: 100vh;
+  background: #fff;
+}
+.main-contents.active {
+  width: calc(100% - 90px);
+  left: 90px;
+}
+.main-contents .topbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.main-contents .topbar .toggle .icon-toggle {
+  font-size: 24px;
+  cursor: pointer;
+}
+.main-contents .topbar .search {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+}
+.main-contents .topbar .search label {
+  position: relative;
+  width: 100%;
+}
+.main-contents .topbar .search label input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 40px;
+  padding-left: 35px;
+  outline: none;
+  font-size: 16px;
+}
+.main-contents .topbar .search label i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+}
+.main-contents .topbar .profile-admin .admin-avt {
+  width: 50px;
+  border-radius: 50%;
+}
